@@ -17,9 +17,6 @@ class HelloWorld {
         productsList.add ("2.mantequilla-3€");
 
 
-
-
-
         System.out.println("Digite el número de la opción que quiera realizar: ");
         System.out.println( options[0]);
         System.out.println( options[1]);
@@ -46,7 +43,6 @@ class HelloWorld {
 
             System.out.println("Lista actualizada de productos: " + productsList);
 
-
         }
         if  ( choosedOption == 2){
             System.out.println("Tu decisión ha sido: " + options[2] );
@@ -57,11 +53,6 @@ class HelloWorld {
             index = productsList.remove(productToDelete);
             System.out.println("Producto " + productToDelete + " eliminado correctcamente");
             System.out.println("Lista actualizada de productos: " + productsList);
-
-
-
-
-
 
         }
         if  ( choosedOption > 2){
