@@ -1,27 +1,55 @@
 import java.util.Scanner;
+import java.util.Arrays;
 
 class HelloWorld {
     public static void main (String[] args) {
         Scanner input = new Scanner(System.in);
 
-        String[] option = new String [3];
-        option[0] = "0.comprar producto";
-        option[1] = "1.añadir producto";
-        option[2] = "2.eliminar producto";
+        String[] options = new String [3];
+        options[0] = "0.Comprar producto";
+        options[1] = "1.Añadir producto";
+        options[2] = "2.Eliminar producto";
+
+        String[] products = new String [3];
+        products[0] = "0.aguacate-2€";
+        products[1] = "1.leche-1€";
+        products[2] = "2.mantequilla-3€";
 
 
-        System.out.println("Digite el número de la opción que quiera realizar: " + option[0]+ "   "+ option[1]+ "   "+option[2]);
+        System.out.println("Digite el número de la opción que quiera realizar: ");
+        System.out.println( options[0]);
+        System.out.println( options[1]);
+        System.out.println( options[2]);
         int choosedOption;
         choosedOption = input.nextInt();
 
-        System.out.println("tu decisión ha sido: " + choosedOption );
+        if ( choosedOption == 0){
+            System.out.println("tu decisión ha sido: " + options[0] );
+        }
 
-       /* System.out.println("tu decisión ha sido: " + option[0] );
-        System.out.println("tu decisión ha sido: " + option[2] );
-        System.out.println("tu decisión ha sido: " + option[3] );
+       if  ( choosedOption == 1){
+            System.out.println("tu decisión ha sido: " + options[1] );
+        }
+        if  ( choosedOption == 2){
+            System.out.println("tu decisión ha sido: " + options[2] );
+        }
+        if  ( choosedOption > 2){
+            System.out.println("Cuidado! No exite esta opción, introduzca de nuevo la opción que desea: " );
+            System.out.println( options[0]);
+            System.out.println( options[1]);
+            System.out.println( options[2]);
+            choosedOption = input.nextInt();
+        }
+
+
+
+
+
+
+
+
+       /*
         System.out.println("esta opción no existe, vuelva a intentarlo:");*/
-        choosedOption = input.nextInt();
-
 
 
 
