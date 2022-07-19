@@ -38,7 +38,12 @@ class HelloWorld {
 
        if  ( choosedOption == 1){
             System.out.println("tu decisión ha sido: " + options[1] );
+             String newProduct;
             System.out.println("Inserte el nombre y precio del nuevo producto, separado por un guión:");
+            newProduct = input.next();
+            productsList.add(newProduct);
+            System.out.println("Producto "+"'"+newProduct +"'"+" añadido con éxito");
+
 
         }
         if  ( choosedOption == 2){
