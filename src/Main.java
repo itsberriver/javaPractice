@@ -49,7 +49,19 @@ class HelloWorld {
 
         }
         if  ( choosedOption == 2){
-            System.out.println("tu decisión ha sido: " + options[2] );
+            System.out.println("Tu decisión ha sido: " + options[2] );
+            int productToDelete;
+            String index;
+            System.out.println("qué producto quieres eliminar? " + productsList );
+            productToDelete = input.nextInt();
+            index = productsList.remove(productToDelete);
+            System.out.println("Producto " + productToDelete + " eliminado correctcamente");
+            System.out.println("Lista actualizada de productos: " + productsList);
+
+
+
+
+
 
         }
         if  ( choosedOption > 2){
@@ -59,9 +71,6 @@ class HelloWorld {
             System.out.println( options[2]);
             choosedOption = input.nextInt();
         }
-
-
-
 
     }
 }
