@@ -25,6 +25,13 @@ class HelloWorld {
 
         if ( choosedOption == 0){
             System.out.println("tu decisión ha sido: " + options[0] );
+            System.out.println("Cuál de los siguientes productos quiere comprar?: " );
+            System.out.println( products[0]);
+            System.out.println( products[1]);
+            System.out.println( products[2]);
+            int choosedProduct;
+            choosedProduct = input.nextInt();
+            System.out.println("Producto comprado con éxito" );
         }
 
        if  ( choosedOption == 1){
